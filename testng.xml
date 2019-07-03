@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Report.ExtentReportsClass"/>
+    </classes>
+ 
+<!-- <suite name="My Suite" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="PackOne.RetryListenerClass" />
+	</listeners>
+	<test name="Test1">
+		<classes>
+			<class name="PackOne.NewTestOne" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="PackOne.NewTestTwo" />
+		</classes>
+	</test>
+ -->	<!-- <test name="testngTest" parallel="methods" thread-count="2">
+		<classes>
+			<class name="ParallelExecution.ParallelTests" />
+		</classes>
+	</test> -->
+
+
+	<!-- <test name="FirefoxTest"> <parameter name="browser" value="firefox" 
+		/> <classes> <class name="multiBrowser.MultiBrowser" /> </classes> </test> 
+		<test name="ChromeTest"> <parameter name="browser" value="chrome" /> <classes> 
+		<class name="multiBrowser.MultiBrowser" /> </classes> </test> -->
+</suite> <!-- Suite -->
