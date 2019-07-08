@@ -2,20 +2,20 @@ package interviewQuestions;
 
 public class PalindromeQ17 {
 
-	public static void isPalindromeStr(int num) {
-		String sNum=String.valueOf(num);
-		System.out.println(sNum);
+	public static String isPalindromeStr(String sNum) {
+//		String sNum=String.valueOf(num);
+		System.out.println("String is :"+ sNum);
 		StringBuilder rNum=new StringBuilder(sNum);
 		rNum.reverse();
-		System.out.println(rNum);
-		if(String.valueOf(num).equals(rNum.toString())) {
-			System.out.println("Palindrome");
+		System.out.println("Revrese is :"+rNum);
+		if(sNum.equalsIgnoreCase(rNum.toString())) {
+			return("Palindrome");
 		}
 		else {
-			System.out.println("Not Palindrome");
+			return("Not Palindrome");
 		}
 	}
-	public static String isPalindrome(int num) {
+	public static String isPalindromeInt(int num) {
 		int r=0;
 		int sum=0;
 		int t=num;
@@ -24,16 +24,19 @@ public class PalindromeQ17 {
 			sum=(sum*10)+r;
 			num=num/10;
 		}
+		System.out.println("Number is :"+ t);
+		System.out.println("Reverse is :"+sum);
+
 		if(t==sum) {
 			return "palindrome";	
 		}
 		else {
-			return "not palindrome";
+			return "Not Palindrome";
 		}
 	}
 	public static void main(String[] args) {
-		System.out.println(isPalindrome(151));
-		isPalindromeStr(123);
+		System.out.println(isPalindromeStr("JOB"));
+		System.out.println(isPalindromeInt(121));
 	}
 
 }
