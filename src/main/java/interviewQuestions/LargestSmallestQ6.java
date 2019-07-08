@@ -1,10 +1,10 @@
-package hacker;
+package interviewQuestions;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class LargestSmallest {
+public class LargestSmallestQ6 {
 
 	public static void main(String[] args) {
 //		smallest and Largest number in Int array		

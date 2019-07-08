@@ -1,9 +1,9 @@
-package hacker;
+package interviewQuestions;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class duplicateElements {
+public class DuplicateElementsQ5 {
 
 	public static void main(String[] args) {
 	
