@@ -9,20 +9,21 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import utilities.BrowserFactory;
+import driverFactory.BrowserFactory;
+import utilities.DateTime;
 
 public class ExtentReportsClass extends BrowserFactory {
 	protected ExtentReports extent;
 	protected ExtentTest test;
 	@BeforeTest
 	public void init() throws Exception {
-		extent = new ExtentReports(System.getProperty("user.dir") + "/Report/ExtentScreenshot_" + getTime() + ".html",
+		extent = new ExtentReports(System.getProperty("user.dir") + "/Report/ExtentScreenshot_" + DateTime.getTime() + ".html",
 				true);
 	}
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
-			String screenShotPath = GetScreenShot.capture(driver, "screenShotName" + getTime());
+			String screenShotPath = GetScreenShot.capture(driver, "screenShotName" + DateTime.getTime());
 			test.log(LogStatus.FAIL, result.getThrowable());
 			test.log(LogStatus.FAIL, "Snapshot below: " + test.addScreenCapture(screenShotPath));
 		}

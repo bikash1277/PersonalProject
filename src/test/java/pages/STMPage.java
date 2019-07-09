@@ -13,7 +13,7 @@ public class STMPage extends ExtentReportsClass {
 	    public void captureScreenshot()
 	    {
 	        test = extent.startTest("captureScreenshot");
-	        driver = initBrowser("Chrome");
+	        driver = getBrowser("Chrome");
 	        driver.navigate().to("https://www.google.com");
 	        String title = driver.getTitle();
 	        Assert.assertEquals("Google", title);

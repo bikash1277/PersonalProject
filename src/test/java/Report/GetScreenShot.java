@@ -13,7 +13,7 @@ public class GetScreenShot {
     {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String dest = System.getProperty("user.dir") +"\\ErrorScreenshots\\"+screenShotName+".png";
+        String dest = System.getProperty("user.dir") +"\\Report\\"+screenShotName+".png";
         File destination = new File(dest);
         FileUtils.copyFile(source, destination);        
                      

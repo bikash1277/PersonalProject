@@ -18,7 +18,7 @@ public class DateTime {
 
 		return formattedDate;
 	}
-	public String getTime() {
+	public static String getTime() {
 		SimpleDateFormat formatter = new SimpleDateFormat("HH-mm-ss-SSS");
 		Date date = new Date();
 		return formatter.format(date);
