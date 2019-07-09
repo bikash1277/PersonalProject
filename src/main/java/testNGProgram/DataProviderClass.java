@@ -1,4 +1,4 @@
-package testNGInterviewPreparation;
+package testNGProgram;
 
 import java.lang.reflect.Method;
 

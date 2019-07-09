@@ -1,7 +1,9 @@
-package utilities;
+package testNGProgram;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -12,7 +14,8 @@ public class ReadExcelData {
 
 	private InputStream oFileReader;
 	private Workbook oExcelWorkbook;
-	
+	private String sExcelFileName;
+
 	public String[][] createDataArray(String sFileName, String sSheetName) {
 		String[][] dataArray = null;
 		openExcelWorkbook(sFileName);
@@ -33,7 +36,7 @@ public class ReadExcelData {
 	public void openExcelWorkbook(String sFileName) {
 		try {
 			oFileReader = new FileInputStream(sFileName);
-//			oExcelWorkbook = Workbook.create(oFileReader);
+//			oExcelWorkbook = Workbook.createSheet(oFileReader);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -6,7 +6,6 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -44,7 +43,6 @@ public class WaitTypesProgram  {
 		
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"mega-menu-item-1548\"]/a")).click();
-		
 		
 		WebElement wElement=wait.until(ExpectedConditions.elementToBeClickable(By.className("mega-menu-link")));
 		wElement.click();

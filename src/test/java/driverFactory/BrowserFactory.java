@@ -51,6 +51,13 @@ public class BrowserFactory {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.navigate().to(url);
+<<<<<<< HEAD
+		}
+		catch(Exception ex) {
+			ex.getMessage();
+		}
+		return driver.getTitle();
+=======
 		
 		return driver.getTitle();
 		}
@@ -58,6 +65,7 @@ public class BrowserFactory {
 			
 			return ex.getMessage(); 
 		}
+>>>>>>> branch 'master' of https://github.com/bikash1277/PersonalProject.git
 	}
 	public static void closeAllDriver() {
 		for (String key : drivers.keySet()) {
