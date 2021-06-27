@@ -1,4 +1,4 @@
-package seleniumInterviewQuestions;
+package utilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import driverFactory.BrowserFactory;
 
 public class WaitTypesProgram  {
 	

@@ -1,4 +1,4 @@
-package interviewQuestions;
+package javaInterviewQuestions;
 
 import java.util.Iterator;
 import java.util.LinkedList;

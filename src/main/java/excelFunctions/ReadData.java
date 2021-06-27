@@ -1,4 +1,4 @@
-package seleniumInterviewQuestions;
+package excelFunctions;
 
 import java.io.File;
 import java.io.FileInputStream;

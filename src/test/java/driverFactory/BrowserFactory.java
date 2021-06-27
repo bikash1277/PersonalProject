@@ -51,14 +51,11 @@ public class BrowserFactory {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.navigate().to(url);
-		
-		return driver.getTitle();
 		}
 		catch(Exception ex) {
-			
-			return ex.getMessage(); 
+			ex.getMessage();
 		}
-
+		return driver.getTitle();
 	}
 	public static void closeAllDriver() {
 		for (String key : drivers.keySet()) {

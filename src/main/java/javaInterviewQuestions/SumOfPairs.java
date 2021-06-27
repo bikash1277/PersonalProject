@@ -1,4 +1,4 @@
-package interviewQuestions;
+package javaInterviewQuestions;
 
 public class SumOfPairs {
 
